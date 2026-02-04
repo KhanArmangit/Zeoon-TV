@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeoon TV - Watch Movies & TV Shows</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="glass-header">
+        <div class="logo">Zeoon TV</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <i data-lucide="search" class="icon"></i>
+            <i data-lucide="bell" class="icon"></i>
+            <div class="avatar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">New Release</span>
+                <h1 class="hero-title">Cyber Horizon</h1>
+                <p class="hero-desc">In a future where neon lights hide dark secrets, one hacker must expose the truth before the system shuts him down forever.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary"><i data-lucide="play" class="icon-sm"></i> Watch Now</button>
+                    <button class="btn btn-secondary"><i data-lucide="info" class="icon-sm"></i> More Info</button>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="categories-container" id="categories-container">
+            <!-- Categories will be injected here by JS -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zeoon TV. All rights reserved.</p>
+        <div class="socials">
+            <i data-lucide="facebook"></i>
+            <i data-lucide="twitter"></i>
+            <i data-lucide="instagram"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
